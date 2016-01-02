@@ -29,7 +29,7 @@ socket.on("tweet", (tweet) => {
         para.innerHTML = urlTweet;
 
         let image = document.createElement("img");
-        image.src = tweets[i].user.profile_image_url;
+        image.src = tweets[i].user.profile_image_url_https;
         image.style.width = "5em";
         image.style.borderRadius = "50%";
         image.style.marginRight = "1em";

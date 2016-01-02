@@ -35,6 +35,7 @@ io.on('connection', (socket) => {
         console.log("starting stream");
         client.stream('statuses/filter', { track: 'javascript' }, (stream) => {
             stream.on('data', (tweet) => {
+                console.log(tweet);
                 io.emit("tweet", tweet)
             });
 
