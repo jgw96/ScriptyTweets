@@ -16,7 +16,7 @@ const client = new Twitter({
     access_token_secret: "kvvwIM4XUnIAViRcJ4UEbuqu4kcR2Qk7ShurBRd2bUR8y"
 })
 
-const server = app.listen(8080 || process.env.PORT, () => {
+const server = app.listen(5000, () => {
     const host = server.address().address;
     const port = server.address().port;
 
