@@ -14,6 +14,10 @@ var urlify = function urlify(text) {
     });
 };
 
+window.onload = function () {
+    document.querySelector("#toast1").open();
+};
+
 document.querySelector("#startTweets").addEventListener("click", function () {
     //start getting tweets
     socket.emit("im ready");

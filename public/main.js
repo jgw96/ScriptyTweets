@@ -12,6 +12,10 @@ const urlify = (text) => {
     })
 }
 
+window.onload = () => {
+    document.querySelector("#toast1").open();
+}
+
 document.querySelector("#startTweets").addEventListener("click", () => {
     //start getting tweets
     socket.emit("im ready");
